@@ -7,26 +7,37 @@
 #root {
     margin:  3rem auto;
     padding: 1rem;
-    max-width: 500px;
+    max-width: 600px;
 }
 
-.add-todo {
+.addtodo {
+    display:flex;
     margin-right: auto;
     margin-bottom: 1rem;
     margin-left: auto;
     max-width: 300px;
 }
 
-.todo-name input{
+#todo-name {
+    width: 14em;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.add-todo input{
     height: 2rem;
     border-radius: 4px;
     margin-right: 1rem;
 }
 
-.add-todo button{
-    height: 2rem;
-    border-radius: 4px;
+.todo-btn{
+    padding: 10px;
+    margin-left: 20px;
+    border-radius: 20px;
+    
 }
+
+
 
 .todo-list{
     padding: 2rem;
@@ -53,6 +64,10 @@
     border: none;cursor: pointer;
 }
 
+
+.done{
+    text-decoration: line-through;
+}
 
 
 

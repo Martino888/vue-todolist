@@ -12,14 +12,15 @@
 <body>
     <div id="root">
         <div class="addtodo">
-            <input @keyup.enter="add-Todo" v-model="newTodo" type="text" name="todo-name" placeholder="Nuovo todo" id="todo-name" >
-            <button @click="addTodo">Aggiungi</button>
+            <input @keyup.enter="addtodos" v-model="stringa" type="text" name="todo-name" placeholder="Nuovo todo" id="todo-name" >
+            <button class="todo-btn" @click="addtodos">Aggiungi</button>
         </div>
 
         <ul class="todo-list">
             <li v-for="(todo,index) in todos" class="todo-item">
-                <div>Fare i compiti</div>
-                <button @click="deletetodo" class="btn-delete">X</button>
+                <!--se done e = a true do la classe done altrimente  e vuoto -->
+                <div @click="todo.done = !todo.done" :class="todo.done == true ? 'done' : ''" >{{todo.text}}</div>
+                <button @click="todos.splice(index, 1)" class="btn-delete">X</button>
             </li>
         </ul>
     </div>
