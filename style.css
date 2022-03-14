@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root {
+    margin:  3rem auto;
+    padding: 1rem;
+    max-width: 500px;
+}
+
+.add-todo {
+    margin-right: auto;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    max-width: 300px;
+}
+
+.todo-name input{
+    height: 2rem;
+    border-radius: 4px;
+    margin-right: 1rem;
+}
+
+.add-todo button{
+    height: 2rem;
+    border-radius: 4px;
+}
+
+.todo-list{
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: lightgray;
+    list-style: none;
+}
+
+.todo-item{
+    display: flex;
+    justify-content: space-between;
+    padding: .5em;
+    border-bottom:  2px solid grey;
+}
+
+.todo-item:hover{
+    background-color: white;
+    cursor: pointer;
+}
+
+.todo-item .btn-delete{
+    padding: .5em;
+    background-color: transparent;
+    border: none;cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
